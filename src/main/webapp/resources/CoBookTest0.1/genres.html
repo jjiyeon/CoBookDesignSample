@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>One Movies an Entertainment Category Flat Bootstrap Responsive Website Template | General :: w3layouts</title>
+<title>Co-Book World!</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -71,7 +71,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="header">
 		<div class="container">
 			<div class="w3layouts_logo">
-				<a href="index.html"><h1>One<span>Movies</span></h1></a>
+				<a href="index.html"><h1>CoBook<span></span></h1></a>
 			</div>
 			<div class="w3_search">
 				<form action="#" method="post">
@@ -81,7 +81,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="w3l_sign_in_register">
 				<ul>
-					<li><i class="fa fa-phone" aria-hidden="true"></i> (+000) 123 345 653</li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Wish List <span class="badge">2</span></a>
+					<ul class="dropdown-menu multi-column columns-2">
+									 <li>
+									<div class="wishlist_dropdown">
+										<ul class="multi-column-dropdown">
+											<li><a href="#">1권</a></li>
+											<li><a href="#">뱀파이어와의 인터뷰</a></li>
+											 <div class="dropdown-divider"><a></a></div>
+											 <li><a href="#">Action</a></li>
+											<li><a href="#">Biography</a></li>
+											 
+										</ul>
+									</div>
+									<div class="clearfix"></div>
+									</li>
+								</ul>
+					</li>
 					<li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
 				</ul>
 			</div>
@@ -89,12 +105,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 <!-- //header -->
+
 <!-- bootstrap-pop-up -->
-	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+ 	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					Sign In & Sign Up
+					Hello, CoBook!
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
 				</div>
 				<section>
@@ -102,19 +119,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3_login_module">
 							<div class="module form-module">
 							  <div class="toggle"><i class="fa fa-times fa-pencil"></i>
-								<div class="tooltip">Click Me</div>
+								<div class="tooltip">Sign Up!</div>
 							  </div>
 							  <div class="form">
 								<h3>Login to your account</h3>
-								<form action="#" method="post">
+								<form class="login" action="#" method="post">
 								  <input type="text" name="Username" placeholder="Username" required="">
 								  <input type="password" name="Password" placeholder="Password" required="">
 								  <input type="submit" value="Login">
 								</form>
 							  </div>
+							  <!-- <div class="social-icons">
+									<div class="login-button">
+											<a class="fa" href="#"><i class="anc-fa"></i><span>Facebook</span><div class="clear"></div></a> 
+											<a class="go" href="#"><i class="anc-go"></i><span>Google+</span><div class="clear"></div></a>
+										<div class="clear"></div>
+									</div>
+								</div> -->
 							  <div class="form">
 								<h3>Create an account</h3>
-								<form action="#" method="post">
+								<form class="login" action="#" method="post">
 								  <input type="text" name="Username" placeholder="Username" required="">
 								  <input type="password" name="Password" placeholder="Password" required="">
 								  <input type="email" name="Email" placeholder="Email Address" required="">
@@ -122,9 +146,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								  <input type="submit" value="Register">
 								</form>
 							  </div>
-							  <div class="cta"><a href="#">Forgot your password?</a></div>
+								 <div class="social-icons">
+									<div class="login-button">
+											<a class="fa" href="#"><i class="anc-fa"></i><span>Facebook</span><div class="clear"></div></a> 
+											<a class="go" href="#"><i class="anc-go"></i><span>Google+</span><div class="clear"></div></a>
+										<div class="clear"></div>
+									</div>
+								</div>
+									<div class="cta">
+										<a href="#">Forgot your password?</a>
+									</div>
+								</div>
 							</div>
-						</div>
 					</div>
 				</section>
 			</div>
@@ -143,7 +176,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  }, "slow");
 		});
 	</script>
-<!-- //bootstrap-pop-up -->
 <!-- nav -->
 	<div class="movies_nav">
 		<div class="container">
@@ -160,82 +192,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav>
 						<ul class="nav navbar-nav">
-							<li class="w3_home_act"><a href="index.html">Home</a></li>
+							<li><a href="index.html">Home</a></li>
 							<li class="dropdown active">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Genres <b class="caret"></b></a>
+								<a href="genres.html" class="dropdown-toggle" data-toggle="dropdown">Genres <b class="caret"></b></a>
 								<ul class="dropdown-menu multi-column columns-3">
 									<li>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Action</a></li>
-												<li><a href="genres.html">Biography</a></li>
-												<li><a href="genres.html">Crime</a></li>
-												<li><a href="genres.html">Family</a></li>
-												<li><a href="horror.html">Horror</a></li>
-												<li><a href="genres.html">Romance</a></li>
-												<li><a href="genres.html">Sports</a></li>
-												<li><a href="genres.html">War</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Adventure</a></li>
-												<li><a href="comedy.html">Comedy</a></li>
-												<li><a href="genres.html">Documentary</a></li>
-												<li><a href="genres.html">Fantasy</a></li>
-												<li><a href="genres.html">Thriller</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Animation</a></li>
-												<li><a href="genres.html">Costume</a></li>
-												<li><a href="genres.html">Drama</a></li>
-												<li><a href="genres.html">History</a></li>
-												<li><a href="genres.html">Musical</a></li>
-												<li><a href="genres.html">Psychological</a></li>
-											</ul>
-										</div>
-										<div class="clearfix"></div>
+									<div class="col-sm-4">
+										<ul class="multi-column-dropdown">
+											<li><a href="genres.html">Action</a></li>
+											<li><a href="genres.html">Biography</a></li>
+											<li><a href="genres.html">Crime</a></li>
+											<li><a href="genres.html">Family</a></li>
+											<li><a href="horror.html">Horror</a></li>
+											<li><a href="genres.html">Romance</a></li>
+											<li><a href="genres.html">Sports</a></li>
+											<li><a href="genres.html">War</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-4">
+										<ul class="multi-column-dropdown">
+											<li><a href="genres.html">Adventure</a></li>
+											<li><a href="comedy.html">Comedy</a></li>
+											<li><a href="genres.html">Documentary</a></li>
+											<li><a href="genres.html">Fantasy</a></li>
+											<li><a href="genres.html">Thriller</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-4">
+										<ul class="multi-column-dropdown">
+											<li><a href="genres.html">Animation</a></li>
+											<li><a href="genres.html">Costume</a></li>
+											<li><a href="genres.html">Drama</a></li>
+											<li><a href="genres.html">History</a></li>
+											<li><a href="genres.html">Musical</a></li>
+											<li><a href="genres.html">Psychological</a></li>
+										</ul>
+									</div>
+									<div class="clearfix"></div>
 									</li>
 								</ul>
 							</li>
-							<li><a href="series.html">tv - series</a></li>
-							<li><a href="news.html">news</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Country <b class="caret"></b></a>
-								<ul class="dropdown-menu multi-column columns-3">
-									<li>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Asia</a></li>
-												<li><a href="genres.html">France</a></li>
-												<li><a href="genres.html">Taiwan</a></li>
-												<li><a href="genres.html">United States</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">China</a></li>
-												<li><a href="genres.html">HongCong</a></li>
-												<li><a href="genres.html">Japan</a></li>
-												<li><a href="genres.html">Thailand</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.html">Euro</a></li>
-												<li><a href="genres.html">India</a></li>
-												<li><a href="genres.html">Korea</a></li>
-												<li><a href="genres.html">United Kingdom</a></li>
-											</ul>
-										</div>
-										<div class="clearfix"></div>
-									</li>
-								</ul>
-							</li>
-							<li><a href="short-codes.html">Short Codes</a></li>
-							<li><a href="list.html">A - z list</a></li>
+							 <li><a href="news.html">Review</a></li> 
+							<li><a href="list.html">Mybook</a></li>
+							<li><a href="#">About</a></li>
+						 <li><a href="contact.html">Contact</a></li>
+							<li><a href="#">MyPage</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -243,16 +244,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 <!-- //nav -->
-<div class="general_social_icons">
-	<nav class="social">
-		<ul>
-			<li class="w3_twitter"><a href="#">Twitter <i class="fa fa-twitter"></i></a></li>
-			<li class="w3_facebook"><a href="#">Facebook <i class="fa fa-facebook"></i></a></li>
-			<li class="w3_dribbble"><a href="#">Dribbble <i class="fa fa-dribbble"></i></a></li>
-			<li class="w3_g_plus"><a href="#">Google+ <i class="fa fa-google-plus"></i></a></li>				  
-		</ul>
-  </nav>
-</div>
 <!-- /w3l-medile-movies-grids -->
 	<div class="general-agileits-w3l">
 		<div class="w3l-medile-movies-grids">
@@ -1305,17 +1296,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="w3ls_footer_grid">
 				<div class="col-md-6 w3ls_footer_grid_left">
 					<div class="w3ls_footer_grid_left1">
-						<h2>Subscribe to us</h2>
+						<!-- <h2>Subscribe to us</h2>
 						<div class="w3ls_footer_grid_left1_pos">
-							<form action="#" method="post">
-								<input type="email" name="email" placeholder="Your email..." required="">
-								<input type="submit" value="Send">
-							</form>
-						</div>
+							<a href="index.html"><h2>CoBook<span></span></h2></a>
+						</div> -->
 					</div>
 				</div>
 				<div class="col-md-6 w3ls_footer_grid_right">
-					<a href="index.html"><h2>One<span>Movies</span></h2></a>
+					<a href="index.html"><h2>CoBook<span></span></h2></a>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
