@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Co-Book World!</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- css -->
 <link href="resources/CoBookDesign/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="resources/CoBookDesign/css/login.css" rel="stylesheet" type="text/css" media="all"/><!--login CSS -->
@@ -49,6 +49,7 @@
 <!--  index Main 추가  -->
 <script type="text/javascript">
 $(document).ready(function(){
+	//배너
 	$.ajax({
 		type : "get",
 		url : 'index/banner',
@@ -59,6 +60,7 @@ $(document).ready(function(){
 		}
 	});
 	
+	//cobook 추천 리스트
 	$.ajax({
 		type : "get",
 		url : 'index/cobookList',
@@ -69,6 +71,7 @@ $(document).ready(function(){
 		}
 	});
 	
+	//Monthly 리스트
 	$.ajax({
 		type : "get",
 		url : 'index/monthlyList',
@@ -78,6 +81,7 @@ $(document).ready(function(){
 		}
 	});
 	
+	//Alladin 리스트
 	$.ajax({
 		type : "get",
 		url : 'index/alladinList',
@@ -101,7 +105,6 @@ function banner() {
 		});
 		$(".slidey-list-description").dotdotdot();
 		
-		
 		$('#slider').nivoSlider();
 } 
 //cobooklist 이벤트 
@@ -115,6 +118,7 @@ function cobookList() {
 		  itemsDesktopSmall : [414,3]
 		});
 }
+//알라딘리스트 
 function aladinList(){
 	  $('.flexslider').flexslider({
 			animation: "slide",
@@ -139,8 +143,8 @@ function aladinList(){
 </head>
 <body>
 <!-- header login, wishList, navibar start -->
-<c:import url="index/header.jsp" charEncoding="UTF-8" >
-	<c:param name="subPath" value="company" />
+<c:import url="header.jsp" charEncoding="UTF-8" >
+	<c:param name="loginId" value="loginId" />
 </c:import>
 <!-- content start-->
 <div id="index_banner"></div> 
@@ -148,8 +152,6 @@ function aladinList(){
 <div id="index_monthlyList"></div>
 <div id="index_alladinList"></div>
 <!-- footer -->
-<c:import url="index/footer.jsp" charEncoding="UTF-8" >
-	<c:param name="subPath" value="company" />
-</c:import>
+<c:import url="footer.jsp" charEncoding="UTF-8"/>
 </body>
 </html>
