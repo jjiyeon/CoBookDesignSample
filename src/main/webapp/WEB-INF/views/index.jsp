@@ -4,16 +4,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Co-Book World!</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- css -->
 <link href="resources/CoBookDesign/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="resources/CoBookDesign/css/login.css" rel="stylesheet" type="text/css" media="all"/><!--login CSS -->
 <link href="resources/CoBookDesign/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- 메인추가 -->
 <link href="resources/CoBookDesign/css/slider.css" rel="stylesheet" type="text/css" media="all"/>
-<!-- 메인추가 -->
+<!-- 메인추가 
+<link href="resources/CoBookDesign/css/contactstyle.css"  rel="stylesheet" type="text/css" media="all" />
+<link href="resources/CoBookDesign/css/faqstyle.css?ver=1" rel="stylesheet" type="text/css" media="all" />
+<link href="resources/CoBookDesign/css/single.css" rel='stylesheet' type='text/css' />
+-->
 <link href="resources/CoBookDesign/css/medile.css" rel='stylesheet' type='text/css' />
 <!-- banner-slider -->
 <link href="resources/CoBookDesign/css/jquery.slidey.min.css" rel="stylesheet">
@@ -29,8 +35,7 @@
 <!-- aladinList -->
 <link rel="stylesheet" href="resources/CoBookDesign/css/flexslider.css" type="text/css" media="screen" property="" />
 
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
 
 <script type="text/javascript" src="resources/CoBookDesign/js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="resources/CoBookDesign/js/easing.js"></script>
@@ -143,7 +148,7 @@ function aladinList(){
 </head>
 <body>
 <!-- header login, wishList, navibar start -->
-<c:import url="header.jsp" charEncoding="UTF-8" >
+<c:import url="/WEB-INF/views/header.jsp" charEncoding="UTF-8" >
 	<c:param name="loginId" value="loginId" />
 </c:import>
 <!-- content start-->
@@ -152,6 +157,6 @@ function aladinList(){
 <div id="index_monthlyList"></div>
 <div id="index_alladinList"></div>
 <!-- footer -->
-<c:import url="footer.jsp" charEncoding="UTF-8"/>
+<c:import url="/WEB-INF/views/footer.jsp" charEncoding="UTF-8"/>
 </body>
 </html>
